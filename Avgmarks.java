@@ -17,5 +17,7 @@ public class Avgmarks {
        System.out.println("TOTAL MARKS:       "       + result);
        System.out.print("AVERAGE MARKS:      "        + avgm);
 
+       sc.close();
+
     }
 } 
