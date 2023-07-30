@@ -13,8 +13,7 @@ public class Avgmarks {
        int b  = sc.nextInt();
        System.out.println("ENTER YOUR MARKS IN MATHS: ");
        int m = sc.nextInt();
-       double result = (p+c+b+m); double avgm = result/4;      
-       
+       double result = (p+c+b+m); double avgm = result/4;            
        System.out.println("TOTAL MARKS:       "       + result);
        System.out.print("AVERAGE MARKS:      "        + avgm);
 
