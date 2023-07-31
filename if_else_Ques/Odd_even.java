@@ -1,4 +1,6 @@
-//  Q WAP to take a no from user and check whether the no is odd even
+package if_else_Ques;
+
+ // Q WAP to take a no from user and check whether the no is odd even
 
 import java.util.Scanner;
 
@@ -18,6 +20,7 @@ public class Odd_even {
             System.out.println("ODD NUMBER");
         }
         
+        sc.close();
 
     }
     
