@@ -11,7 +11,7 @@ public class Vowel_consonents {
 
         if (!(val > 'A' && val < 'Z' || val > 'a' && val < 'z')) {
             
-            System.out.println(val +" "+ "SPECIAL CHARACTER");
+            System.out.println("SPECIAL CHARACTER");
         } else {
             if (val=='A' || val=='E' || val=='I' || val=='O' || val=='U' || val=='a' || val=='e' || val=='i' || val=='o' || val=='u') {
                 System.out.println("VOWEL");                
