@@ -2,7 +2,7 @@ package if_else_Ques;
 
 import java.util.Scanner;
 
-public class range_check {
+public class Range_check {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
