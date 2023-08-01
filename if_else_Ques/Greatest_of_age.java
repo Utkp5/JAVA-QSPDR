@@ -14,15 +14,21 @@ public class Greatest_of_age {
        System.out.print("ENTER THIRD AGE : ");
        int age3 = sc.nextInt();
 
-       if (age1 > age2 && age1 > age3 && age2 > age3) {
-            System.out.println(age1 +" "+ "IS ELDEST" + age3 +" "+ "IS YOUNGEST");
-        } 
-        else if (age3 > age2 && age3 > age1 && age2 > age1) {
-           System.out.println(age3 +" "+ "IS GREATER" + age1 +" "+ "IS YOUNGEST");
-        } 
-        else {
-           System.out.println(age2 +" "+ "IS GREATER" + age2 +" "+ "IS YOUNGEST");
-       } 
+       if (age1 > 0 && age2 > 0 && age3 > 0) {
+        
+           if (age1 > age2 && age1 > age3 && age3 > age2) {
+              System.out.println(age1 +" "+ "IS ELDEST" +" "+ age2 +" "+ "IS YOUNGEST");
+            } 
+            else if (age2 > age3 && age2 > age1 && age1 > age3) {
+               System.out.println(age2 +" "+ "IS ELDEST" +" "+ age3 +" "+ "IS YOUNGEST");
+            } 
+            else {
+               System.out.println(age3 +" "+ "IS ELDEST" +" "+ age1 +" "+ "IS YOUNGEST");
+            } 
+
+       } else {
+         System.out.println("Invalid input");
+       }
 
         sc.close();
    
