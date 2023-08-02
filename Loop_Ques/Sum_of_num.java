@@ -11,13 +11,12 @@ public class Sum_of_num {
         System.out.print("ENTER A NUMBER : "); 
         int num = sc.nextInt();
         
-        int i = 1,temp = num,sum = 0,tempval = 0;
+        int temp = num,sum = 0,tempval = 0;
 
-        while (i<=temp) {
+        while (temp > 0) {
             tempval = temp%10;
             sum = sum+tempval;
-            temp = temp/10;
-            i++;
+            temp = temp/10;            
         }
         System.out.print("SUM OF " + num + " IS : " + sum); 
 
