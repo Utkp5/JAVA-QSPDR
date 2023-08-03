@@ -14,7 +14,7 @@ public class Factors_of_number {
         
         int i = 1;
 
-        while (num >= i) {
+        while (num >= i) { //do it with for loop suggestion
             
             if (num%i==0) {
                 System.out.print(i + " ");
