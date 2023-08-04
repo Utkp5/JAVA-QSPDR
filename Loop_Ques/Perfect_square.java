@@ -21,7 +21,7 @@ public class Perfect_square {
 
             if(square == num) {
                 System.out.println("PERFECT SQUARE");
-                i = num;
+                i = num;   //we can do it with break statement also
             }            
         }
         if (square != num) {
