@@ -1,6 +1,11 @@
 package Loop_Ques;
-
 import java.util.Scanner;
+
+// Question :-  WAP TO FIND WHETHER THE NUMBER IS TECH OR NOT
+//like eg(
+// 2025 => 20 + 25 = 45...  45 * 45 = 2025 so it is a  tech no.)
+// (first chk the num is even  .... if odd send to else part  )
+
 
 public class Tech_number {
     public static void main(String[] args) {
