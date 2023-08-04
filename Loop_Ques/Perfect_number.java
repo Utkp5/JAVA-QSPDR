@@ -1,8 +1,10 @@
 package Loop_Ques;
 import java.util.Scanner;
 
-// Question :-  WAP TO FIND THE FACTORIAL OF A NUMBER 
-
+// Question :-  WAP TO FIND THE PERFECT NUMBER  OR NOT
+//(a no which is proper divisible except the no. is the no. itself)
+//(like :-  6 => 1,2,3 = 1+2+3 = 6 so is a perf no.)
+//(like :-  8 => 1,2,4, = 1+2+4 = 7 so is not a perf no.)
 
 public class Perfect_number {
     public static void main(String[] args) {
