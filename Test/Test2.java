@@ -1,25 +1,41 @@
 package Test;
+import java.util.Scanner;
+
+// WAJP TO CHECK WHETHER THE NUMBER IS BUZZ NUMBER OR FIZZ NUMBER OR NEITHER THE BOTH 
+// THE NUMBER THAT ENDS WITH 7 OR IS DIVISIBLE 7 IS KNOWN AS BUZZ NUMBER
+// THE NUMBER THAT ENDS WITH 7 AND DIVISIBLE BY 7 IS KNOWN AS FIZZ NUMBER
 
 
-// 2) WAJP TO CHECK WHETHER THE MINDER IS BUZZ MURDER OR FIZZ *THE MER THAT ENDS WITH 7 OR IS DIVISTELE 7 15 THE UBER THAT ENDS WITH 7 AND DIVISIBLE BY 7 IS YN TEST CASE 1:42 BUZZ NOMER (DOVISIBLE)
-// 2 307 BUZZ NUMBER (ENDS WITH 7 )
-// AS
-// ON EITHER THE OTH
-// A FIZZ
-// 3. 347 FIZZ MHDERS WITH 7 MD ALSO DIVISOLE WY 4. 134 NEITHER BUZZ ON 22
-// 3) NAJP TO FIND MEAN OF A NUMBER?
-// (SMALLEST DIGIT LARGEST DIGIT)/M OF UGL
-// TEST CASE 1: 7531 SMALLEST IS 1, GREATEST 157, MO 635 154, 569 15-2 2542714 SMALLEST GREATEST 15
-// WUM OF 20 25 500 5 LS
-// 3: 743585 SMALLEST 3, GREATEST ES5, NUM OF
-// 4) WA3P TO PRINT HETER THE NUMBER IS STRONG IN OR NE T
-// 5,5-2
-// IF SUM OF FACTORIAL OF MURDER IS SAVE AS THAT OF NURCH, IT IS CALLED STRONG SUPP TEST CASE 1: 3453 114151324 320 345 (STRING PRO)
-// 2: 40505 4101 51 31 51 40505 (STRING BER) 33453141516+24+ 129 130 (T STRONG NE 1
-// 700
-// Freeze
+//       TEST CASE 1: 42 BUZZ NUMBER (DIVISIBLE BY 7)
+//                 2: 107 BUZZ NUMBER (ENDS WITH 7 ) 
+//                 3. 147 FIZZ NUMBER (ENDS WITH 7 AND ALSO DIVISIBLE BY 7)
+//                 4. 134 NEITHER BUZZ NOR FIZZ
 
 
-public class Test1 {
-    
+
+public class Test2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("ENTER A NUMBER : ");
+        int num = sc.nextInt();
+        
+        int last_digit = 0, divisble = 0;
+
+        last_digit = num % 10;
+        divisble = num % 7;
+
+        if (last_digit==7 && divisble==0) {
+            System.out.println("=======FIZZ NUMBER========");
+        } 
+        else if(last_digit==7 || divisble==0)
+        {            
+            System.out.println("=======BUZZ NUMBER========");
+        }
+        else {            
+            System.out.println("=======NEITHER BUZZ NOR FIZZ NUMBER========");
+        }
+        
+        sc.close();
+    }
 }
