@@ -13,7 +13,7 @@ public class Object1 {
 
     public static void main(String[] args) {
 
-        Object1 o = new Object1();
+        Object1 o = new Object1();          //object1 here is **constructor**
         o.name = "UTKARSH";
         o.course = "BCA";
         System.out.println("COLLEGE NAME : " + college + "\n" + "NAME : " + o.name + "\n" + "COURSE : " + o.course);
