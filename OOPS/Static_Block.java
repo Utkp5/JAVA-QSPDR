@@ -6,7 +6,7 @@ public class Static_Block {
         System.out.println("Good Morning");
     }
 
-    static int demo(int n) {
+    int demo(int n) {
        return n*n;
     } 
 
@@ -14,8 +14,9 @@ public class Static_Block {
         System.out.println("Good Evening");
     }
 
-    public static void main(String[] args) {
-        int res = demo(10);
+    public static void main(String[] args) {        
+        Static_Block Sb = new Static_Block();
+        int res = Sb.demo(10);
         System.out.println(res);
     }
 }
