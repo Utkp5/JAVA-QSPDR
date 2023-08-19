@@ -11,7 +11,7 @@ public class Non_Static_Block {
     }
 
     {
-        System.out.println("Morning");    //exe 3rd
+        System.out.println("Morning");    //this is non-static block    exe 3rd
     }
 
     int demo(int n) {
