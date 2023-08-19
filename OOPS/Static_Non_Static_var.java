@@ -21,7 +21,7 @@ public class Static_Non_Static_var {
 
     public static void main(String[] args) {
         System.out.println("====MMS===");
-        Static_Non_Static_var  v1 = new Static_Non_Static_var();
+        new Static_Non_Static_var();
 
     }
 }
