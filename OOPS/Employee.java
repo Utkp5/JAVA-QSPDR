@@ -1,5 +1,8 @@
 package OOPS;
 
+// STATIC  AND NON-STATIC BLOCKS
+
+
 public class Employee {
 
     int empId;
