@@ -9,7 +9,7 @@ public class Parameterised_Constructor {
 
     Parameterised_Constructor(String model, int price, double mileage)
     {
-        this.model   = model;
+    /*here this.model is refering to global variable */    this.model   = model;   //here model is argument which is passed
         this.price   = price;
         this.mileage = mileage ;
 
