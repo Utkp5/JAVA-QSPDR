@@ -14,7 +14,7 @@ public class Cars {
         System.out.println("this is " + name + " car");
     }
 
-    Cars() {
+    Cars() {            // constructor 
         System.out.println(" Please pay the bill ");
         name = "verna";
         price = 1800000;
