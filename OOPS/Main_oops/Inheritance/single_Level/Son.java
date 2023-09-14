@@ -4,7 +4,7 @@ public class Son extends Father{
 
     String Son_msg;
     
-    public void message()
+    public void Son_msg() // method or function
     {
         System.out.println("Hello son");
     }
