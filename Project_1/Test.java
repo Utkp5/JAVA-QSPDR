@@ -28,13 +28,13 @@ public class Test {
                 if (choice.equalsIgnoreCase("Yes")) {
                     m.cancelTicket();
                 } else {
-                    System.out.println("Enjoy the show....Thank U for Booking...... ");                    
+                    System.out.println("Enjoy the show...." + m.Name + "Thank U for Booking...... ");                    
                 }
 
             }
 
         } 
-        
+
         if (Bms.selection == 2) {
             System.out.println("Comdey show");                    
         }

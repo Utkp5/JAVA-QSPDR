@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class BookMyShow {
 
     Scanner sc = new Scanner(System.in);
-    String emailid, pwd;
+    String Name, emailid, pwd;
     boolean isLogin;
     int selection;
 
@@ -14,9 +14,11 @@ public class BookMyShow {
         int n = sc.nextInt();
 
         if (n==1) {
-            System.out.println("Enter the emailid : ");
+            System.out.print("Enter the emailid : ");
+            Name = sc.next();
+            System.out.print("Enter the emailid : ");
             emailid = sc.next();
-            System.out.println("Enter the password : ");
+            System.out.print("Enter the password : ");
             pwd = sc.next();
             login();
         } else {
@@ -28,10 +30,10 @@ public class BookMyShow {
     public void login()
     {
         System.out.println("Enter Login deatils");
-        System.out.println("Enter the email id : ");
-        String loginemail = sc.nextLine();
-        System.out.println("Enter the password : ");
-        String loginpwd = sc.nextLine();
+        System.out.print("Enter the email id : ");
+        String loginemail = sc.next();
+        System.out.print("Enter the password : ");
+        String loginpwd = sc.next();
 
         if (loginemail.equalsIgnoreCase(emailid) && loginpwd.equalsIgnoreCase(pwd)) {
             System.out.println("Login successfully");
