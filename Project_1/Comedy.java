@@ -2,7 +2,7 @@ package Project_1;
 
 class Comedy extends BookMyShow{
 
-    double price = 0, tax = 0;
+    double price = 0, tax;
     int Comedychoice;
 
 
@@ -11,21 +11,21 @@ class Comedy extends BookMyShow{
     {
         System.out.println("Enter the Comedy show you want to watch");
         System.out.println("press 1 for Standup / 2 for Show");
-        int Comedychoice = sc.nextInt();
+        Comedychoice = sc.nextInt();
 
         if (Comedychoice == 1) {
 
             System.out.println("Enter the show you want to watch");
-            System.out.println("Munawar show  / Harsh show");
+            System.out.println("Munawar / Harsh ");
             String showSelect = sc.next();
-            System.out.println("Enjoy watching the " + showSelect);
+            System.out.println("Enjoy watching the " + showSelect + " Comedy Standup show");
             
         } else {
 
             System.out.println("Enter the show you want to watch");
-            System.out.println("Zakir show  / Bassi show");
+            System.out.println("Zakir / Bassi ");
             String showSelect = sc.next();
-            System.out.println("Enjoy watching the " + showSelect);
+            System.out.println("Enjoy watching the " + showSelect + " show");
             
         }
     }
@@ -38,9 +38,9 @@ class Comedy extends BookMyShow{
             System.out.println("Enter the Number of seats u want to book");
             int seatBook = sc.nextInt();
             System.out.println("Price for 1 seat is Rs.500");
-            price = price + (500 * seatBook);
+            price = tax + price + (500 * seatBook);
             System.out.println("Sub Total is Rs." + price);
-            tax = price * (15 / 100 );  // calculating tax
+            tax = ((price * 5) / 100) ;  // calculating tax
             System.out.println("Tax 5% on seat is Rs." + tax);
             price = price + tax;
             System.out.println("Total amount to pay is Rs." + price);
@@ -60,7 +60,7 @@ class Comedy extends BookMyShow{
                 
                 price = price + (5000 * seatBook);
                 System.out.println("Sub Total is Rs." + price);
-                tax = price * (15 / 100 );  // calculating tax
+                tax = ((price * 15) / 100 );  // calculating tax
                 System.out.println("Tax 15% on seat is Rs." + tax);
                 price = price + tax;
                 System.out.println("Total amount to pay is Rs." + price);
@@ -69,7 +69,7 @@ class Comedy extends BookMyShow{
                 
                 price = price + (3000 * seatBook);
                 System.out.println("Sub Total is Rs." + price);
-                tax = price * (10 / 100 );  // calculating tax
+                tax = ((price * 10) / 100 );  // calculating tax
                 System.out.println("Tax 10% on seat is Rs." + tax);
                 price = price + tax;
                 System.out.println("Total amount to pay is Rs." + price);
@@ -78,7 +78,7 @@ class Comedy extends BookMyShow{
                 
                 price = price + (1500 * seatBook);
                 System.out.println("Sub Total is Rs." + price);
-                tax = price * (5 / 100 );  // calculating tax
+                tax = ((price * 5) / 100 );  // calculating tax
                 System.out.println("Tax 5% on seat is Rs." + tax);
                 price = price + tax;
                 System.out.println("Total amount to pay is Rs." + price);
@@ -162,7 +162,7 @@ class Comedy extends BookMyShow{
 
         if (cancelChoice.equalsIgnoreCase("Yes")) {
             System.out.println("Ticket has been cancelled");
-            double cancelticket = price - price * (10 / 100);
+            double cancelticket = price - ((price * 10) / 100);
             System.out.println("Total amount to be refunded Rs. " + cancelticket);
         } else {
             System.out.println("Enjoy the show ");
