@@ -2,16 +2,18 @@ package Project_1;
 
 class Comedy extends BookMyShow{
 
-    int price = 0;
+    double price = 0, tax = 0;
+    int Comedychoice;
+
 
     @Override
     public void search()
     {
         System.out.println("Enter the Comedy show you want to watch");
         System.out.println("press 1 for Standup / 2 for Show");
-        int choice = sc.nextInt();
+        int Comedychoice = sc.nextInt();
 
-        if (choice == 1) {
+        if (Comedychoice == 1) {
 
             System.out.println("Enter the show you want to watch");
             System.out.println("Munawar show  / Harsh show");
@@ -30,12 +32,60 @@ class Comedy extends BookMyShow{
     
     
     public void seatSelection()
-    {
-        System.out.println("Enter the Number of seats u want to book");
-        int seatBook = sc.nextInt();
-        System.out.println("Price for 1 seat is Rs.500");
-        price = price + (500 * seatBook);
-        System.out.println("Total amount to pay is Rs." + price);
+    {        
+        if (Comedychoice == 1) {
+            
+            System.out.println("Enter the Number of seats u want to book");
+            int seatBook = sc.nextInt();
+            System.out.println("Price for 1 seat is Rs.500");
+            price = price + (500 * seatBook);
+            System.out.println("Sub Total is Rs." + price);
+            tax = price * (15 / 100 );  // calculating tax
+            System.out.println("Tax 5% on seat is Rs." + tax);
+            price = price + tax;
+            System.out.println("Total amount to pay is Rs." + price);
+
+        }
+        if (Comedychoice == 2) {
+
+            System.out.println("1 --> Price for Nearstage seat is Rs.5000");
+            System.out.println("2 --> Price for Middle    seat is Rs.3000");
+            System.out.println("3 --> Price for Back      seat is Rs.1500");
+            int Chooseseat = sc.nextInt();
+
+            System.out.println("Enter the Number of seats u want to book");
+            int seatBook = sc.nextInt();
+
+            if (Chooseseat == 1) {
+                
+                price = price + (5000 * seatBook);
+                System.out.println("Sub Total is Rs." + price);
+                tax = price * (15 / 100 );  // calculating tax
+                System.out.println("Tax 15% on seat is Rs." + tax);
+                price = price + tax;
+                System.out.println("Total amount to pay is Rs." + price);
+            }
+            if (Chooseseat == 2) {
+                
+                price = price + (3000 * seatBook);
+                System.out.println("Sub Total is Rs." + price);
+                tax = price * (10 / 100 );  // calculating tax
+                System.out.println("Tax 10% on seat is Rs." + tax);
+                price = price + tax;
+                System.out.println("Total amount to pay is Rs." + price);
+            }
+            if (Chooseseat == 3) {
+                
+                price = price + (1500 * seatBook);
+                System.out.println("Sub Total is Rs." + price);
+                tax = price * (5 / 100 );  // calculating tax
+                System.out.println("Tax 5% on seat is Rs." + tax);
+                price = price + tax;
+                System.out.println("Total amount to pay is Rs." + price);
+            }            
+        }
+            
+
     }
 
 
@@ -97,5 +147,7 @@ class Comedy extends BookMyShow{
             }
         }
     }
+
+
 
 }
