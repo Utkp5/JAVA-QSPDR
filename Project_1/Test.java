@@ -28,16 +28,28 @@ public class Test {
                 if (choice.equalsIgnoreCase("Yes")) {
                     m.cancelTicket();
                 } else {
+                    System.out.println("Enjoy the Movie.... " + Bms.Name + " Thank U for Booking...... ");                    
+                }
+                
+            }
+            
+            if (Bms.selection == 2) {
+
+                Comedy  c = new Comedy();
+                c.bookTicket();   
+
+                System.out.println("Do you want to cancel ? Yes / No");
+                String choice = sc.next();
+    
+                if (choice.equalsIgnoreCase("Yes")) {
+                    c.cancelTicket();
+                } else {
                     System.out.println("Enjoy the show.... " + Bms.Name + " Thank U for Booking...... ");                    
                 }
-
+    
             }
-
         } 
 
-        if (Bms.selection == 2) {
-            System.out.println("Comdey show");                    
-        }
 
 
         sc.close();

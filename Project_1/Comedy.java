@@ -148,6 +148,26 @@ class Comedy extends BookMyShow{
         }
     }
 
+    public void bookTicket()
+    {
+        search();
+        seatSelection();
+        addOns();
+    }
+
+    public void cancelTicket()
+    {
+        System.out.println("Do u want to cancel your ticket ?  No / Yes ");
+        String cancelChoice = sc.next();
+
+        if (cancelChoice.equalsIgnoreCase("Yes")) {
+            System.out.println("Ticket has been cancelled");
+            double cancelticket = price - price * (10 / 100);
+            System.out.println("Total amount to be refunded Rs. " + cancelticket);
+        } else {
+            System.out.println("Enjoy the show ");
+        }
+    }
 
 
 }
