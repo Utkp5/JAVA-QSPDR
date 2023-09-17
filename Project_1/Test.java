@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Test {
 
     static {
-        System.out.println("==========Welcome to Utkarsh BookMyShow=============");
+        System.out.println("========== Welcome to Utkarsh BookMyShow =============");
     }
 
     public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class Test {
                 if (choice.equalsIgnoreCase("Yes")) {
                     m.cancelTicket();
                 } else {
-                    System.out.println("Enjoy the show...." + m.Name + "Thank U for Booking...... ");                    
+                    System.out.println("Enjoy the show.... " + Bms.Name + " Thank U for Booking...... ");                    
                 }
 
             }

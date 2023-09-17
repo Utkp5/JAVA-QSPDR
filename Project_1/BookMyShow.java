@@ -14,7 +14,7 @@ public class BookMyShow {
         int n = sc.nextInt();
 
         if (n==1) {
-            System.out.print("Enter the emailid : ");
+            System.out.print("Enter the Name : ");
             Name = sc.next();
             System.out.print("Enter the emailid : ");
             emailid = sc.next();
@@ -36,7 +36,7 @@ public class BookMyShow {
         String loginpwd = sc.next();
 
         if (loginemail.equalsIgnoreCase(emailid) && loginpwd.equalsIgnoreCase(pwd)) {
-            System.out.println("Login successfully");
+            System.out.println("Login successfully " + Name);
             isLogin = true;
         } else {
             System.out.println("Invalid credentials");
