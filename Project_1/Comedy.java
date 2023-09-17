@@ -157,8 +157,8 @@ class Comedy extends BookMyShow{
 
     public void cancelTicket()
     {
-        System.out.println("Do u want to cancel your ticket ?  No / Yes ");
-        String cancelChoice = sc.next();
+        // System.out.println("Do u want to cancel your ticket ?  No / Yes ");
+        String cancelChoice = "yes";
 
         if (cancelChoice.equalsIgnoreCase("Yes")) {
             System.out.println("Ticket has been cancelled");

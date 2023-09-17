@@ -22,7 +22,7 @@ public class Test {
                 
                 Movie m = new Movie();
                 m.bookTicket();
-                System.out.println("Do you want to cancel ? Yes / No");
+                System.out.println("Do u want to cancel your ticket ?  No / Yes ");
                 String choice = sc.next();
 
                 if (choice.equalsIgnoreCase("Yes")) {
@@ -38,8 +38,8 @@ public class Test {
                 Comedy  c = new Comedy();
                 c.bookTicket();   
 
-                System.out.println("Do you want to cancel ? Yes / No");
-                String choice = sc.next();
+               System.out.println("Do u want to cancel your ticket ?  No / Yes ");
+               String choice = sc.next();
     
                 if (choice.equalsIgnoreCase("Yes")) {
                     c.cancelTicket();
