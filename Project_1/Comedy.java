@@ -70,7 +70,7 @@ class Comedy extends BookMyShow{
                 price = price + (3000 * seatBook);
                 System.out.println("Sub Total is Rs." + price);
                 tax = ((price * 10) / 100 );  // calculating tax
-                System.out.println("Tax 10% on seat is Rs." + tax);
+                System.out.println("Tax 10% on seat is Rs." + tax);                
                 price = price + tax;
                 System.out.println("Total amount to pay is Rs." + price);
             }
@@ -162,8 +162,10 @@ class Comedy extends BookMyShow{
 
         if (cancelChoice.equalsIgnoreCase("Yes")) {
             System.out.println("Ticket has been cancelled");
-            double cancelticket = price - ((price * 10) / 100);
-            System.out.println("Total amount to be refunded Rs. " + cancelticket);
+            double cancelTicketCharges = ((price * 10) / 100);  // calculating cancel charges
+            double cancel = price - cancelTicketCharges;  
+            System.out.println("10% charge on Cancellation of tickets is Rs." + cancelTicketCharges);
+            System.out.println("Total amount to be refunded Rs. " + cancel);
         } else {
             System.out.println("Enjoy the show ");
         }
