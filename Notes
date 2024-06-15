@@ -1,0 +1,87 @@
+------------------Understanding of JDK, JRE, JVM----------------------------
+
+So Java is mainly having three main components which we need to understand.
+
+The first component is JDK-Java Development Kit, JRE-Java Runtime environment, JVM-Java Virtual machine
+
+1. So Java Development Kit is nothing, but it is a software, the complete Java software which we can download and install.
+But when we have to download install JDK, if you want to do development, if you want to develop any Java applications.
+If you want to develop something, we need the complete full fledged Java software.For that we have to download JDK.
+So Java Development Kit is contains the entire full fledged Java software which is required to develop a Java applications.
+Remember this JDK is required to develop a Java based applications.
+We can develop entire web page or you can develop entire application by using JDK.
+So developers require JDK.
+So whenever you want to develop something you have to install JDK.
+
+
+2. So what is Java Runtime environment.
+So whenever you want to run your Java applications not development.Suppose the some application is already developed in Java.It is ready to use. So now what we need to do we have to install that. Right, Suppose somebody some developer is developed some software some piece of software using Java. Now we need to just download and install it. So just for downloading and installing that particular application which is already developed by using Java.For that we no need JDK.
+
+Suppose if you want to download some software in your local system, we need a supported environment which is called Java Runtime Environment.
+So whenever you want to install or run Java based applications.
+As a prerequisite, you need to install Java. The Java runtime environment.
+I don't want to develop any Java softwares, I just want to install Java based application.
+So before installing Java based application I need to provide an environment.
+For that. We have to use JRE only JRE is enough Java runtime environment.
+
+Uh, some application is already developed using Java I don't want to develop anything, just I want to install that application Java based application. Then you have to install only JRE. That's the reason which is called runtime environment.
+*Runtime environment means it will provide a runtime environment where we can we can install Java based applications.*
+
+
+
+3. Now the third one is a JVM Java virtual machine.
+So JDK and Java. These two are the virtual physical softwares Because the installers are available which we can download and install.
+JVM is not like that JVM means Java virtual machine. We can say this is a *heart* of the entire Java means whatever the program we have written. So JVM will try to understand the code and JVM try to execute our code.
+
+so JVM is a main part of the Java, which is virtual machines, which is not a specific software which we can download and install.
+So JVM by default it is a part of JDK and also Java.
+So what is the relation between these three.
+So JDK is a full fledged software.And there is a subset of JDK, which is JRE AND JVM , inside JRE we have JVM
+
+So if you look at JDK is a superset this is called JDK Java Development Kit.
+If you install JDK we will get the full Java software. means inside u will get JRE & JVM
+And if you install JDK by default you will get a Java.
+So if you install JDK, the Java Complete software automatically you will get Java and JVM.
+
+So these two are the part of entire JDK.
+
+Somebody is developing any application using Java.
+If you want to install that application in your system, you need to provide JRE, just the JRE you have to install as a prerequisite.
+Then you can install Java based applications okay.
+
+*So JDK is a superset, JRE is a subset and JVM is a main core component.*
+
+It's a virtual. Virtual means we cannot see that individually.
+So which is a part of Java as well as JDK.So without JVM there is no Java because as soon as you write some program it will compile and execution.Everything will happen through JVM.So our code will convert into machine understandable format.That's called byte code.
+We call it as a byte code. So this is basically understandable by the machine.
+*So JVM is responsible for converting an entire program into byte code format.*
+
+Then machine can understand machine can compile and execute.So all the tasks done by the JVM itself.This is mainly execution part.
+
+Okay so jdk, JRE and JVM.So these are the three components which you have in Java.
+
+Suppose if you want to write a Java program, if you want to execute and if you want to see the result compiling everything you want to do, then you have to install JDK, the complete software you have to install JDK. JDK is nothing but a full fledged Java software.
+*Normally, uh, they don't call Java okay, JDK means Java.*
+
+*Remember this whenever you don't find like if you type download Java in internet you will find JDK downloads So don't think JDK is something different than Java.*
+So JDK is nothing but a Java.
+So JVM is a responsible for converting an entire program into bytecode format, and the bytecode format can understandable by the machine.
+So JVM is a main heart of the Java.
+
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+
+Even if you install only JRE by default, you will get a JVM.
+If you install JDK by default you will get JRE as well as.
+So everyone is clear on this.
+
+
+If you install JDK by default you will get Java(JRE) and JVM.
+--Okay, so JDK means development.
+--JRE is nothing but a runtime environment.
+--JVM is a virtual machine which is responsible for compiling execution, converting the code into bytecode.
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
